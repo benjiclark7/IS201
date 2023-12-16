@@ -1,0 +1,149 @@
+/* Existing styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #007bff; /* Professional blue */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.navbar a, .navbar div {
+    float: left;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    text-align: left;
+}
+
+.navbar div.menu-icon {
+    float: right;
+    cursor: pointer;
+}
+
+header {
+    background: url('header.png') no-repeat center center; /* Using header.png as the background */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    padding-top: 60px; /* Space for the navbar */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.scroll-button {
+    display: inline-block;
+    background-color: #f0ad4e; /* Button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    color: #ffffff; /* Text color */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .scroll-button:hover {
+    background-color: #ec971f; /* Darker shade of button color for hover effect */
+  }
+  
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background-color: #007bff; /* Same shade of blue as navbar */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; /* Added space below video */
+}
+
+.video-container iframe {
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+    border: none;
+}
+
+/* New styles for sections and headers */
+section {
+    text-align: center;
+    margin-top: 40px; /* Space above each section */
+}
+
+section h2 {
+    color: #007bff; /* Blue color for headers */
+    margin-bottom: 20px; /* Space below headers */
+}
+
+section p {
+    color: #000000; /* Black color for text */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
